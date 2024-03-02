@@ -1,6 +1,6 @@
 // Format date to a string
 function formatDate(date: Date): string {
-    const options = Intl.DateTimeFormatOptions = {year: 'numeric',
+    const options : Intl.DateTimeFormatOptions = {year: 'numeric',
         month: 'long', day: 'numeric'};
 
     const formatedDate = new Date(date).toLocaleDateString(undefined, options);
